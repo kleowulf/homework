@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+header, footer, section {
+    border: solid black 3px;
+}
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    clear: both;
+}
+
+.full-width {
+    float: left;
+    width: 100%;
+    height: 200px;
+}
+
+.col-1-3 {
+    float: left;
+    width: 33.33%;
+    height: 300px;
+}
+
+.col-2-3 {
+    float: left;
+    width: 66.66%;
+    height: 300px;
+}
