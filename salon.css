@@ -1,0 +1,171 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header {
+    height: 50px;
+    border: 1px solid black;
+}
+
+header span {
+    font-style: italic;
+    font-weight: bolder;
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+
+header nav {
+    float: left;
+    width: 60%;
+}
+
+header li {
+    display: inline;
+    float: left;
+    padding: 0 20px;
+}
+
+header > a {
+    float:left;
+    width: 20%;
+    margin-top: 10px;
+ 
+
+}
+
+main {
+    height: fit-content;
+}
+
+main div {
+    float: left;
+    width: 95%;
+    padding: 5% 50% 0 10%;
+}
+
+.side {
+    transform: rotate(90deg);
+    float: left;
+    width: 5%;
+ 
+
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.services {
+    background-color: black;
+    color:white;
+    padding: 5px;
+    float:left;
+}
+
+.first {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    margin-top: 50px;
+    width: fit-content;
+    margin-left: -100px;
+}
+
+.first span {
+    font-size: xx-large;
+}
+
+.book {
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.triplet, .momentum, .colourOftheDay, .lookbook {
+    width: 100%;
+    float: left;
+    height: auto;
+    padding: 20px 15%;
+    margin-top: 50px;
+}
+
+.triplet section {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.triplet, .momentum p {
+    font-size: smaller;
+}
+
+.momentum section {
+    float: left;
+    width: 50%;
+}
+
+.fifty-left {
+    padding: 20px 20px 20px 100px;
+}
+
+.fifty-right {
+    padding: 20px 100px 20px 20px;
+}
+
+.triplet img {
+    z-index: 1;
+    position: relative;
+}
+
+.name {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin: -20px auto;
+    z-index: 2;
+    width: 180px;
+    position: relative;
+}
+
+ .light {
+    font-size: 9px;
+    font-weight: lighter;
+}
+
+.colourOftheDay {
+    background-color: gray;
+    margin: 5% 10% 5% 10%;
+    width: 90%;
+}
+
+.lookbook h2 {
+    text-align: center;
+}
+
+@media  screen and (max-width:900px) {
+    .triplet section {
+        float:none;
+        width: 100%;
+    }
+}

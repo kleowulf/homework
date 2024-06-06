@@ -1,0 +1,137 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+    height: 50px;
+
+}
+
+header img {
+    float: left;
+    height: 50px;
+    width: 40px
+}
+
+nav {
+    float: right;
+    width: 60%;
+}
+
+nav li {
+    display: inline;
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li:first-child {
+    margin-right: 20px;
+}
+
+main {
+    height: 500px;
+    float: left;
+    width: 100%;
+    margin-top: 100px;
+    padding-right: 600px;
+    padding-left: 200px;
+
+}
+
+ li {
+    display: inline;
+    margin: 0 20px;
+}
+
+h1 {
+ font-size: 80px;
+}
+
+section {
+    height: 700px;
+    float: left;
+    width: 100%;
+}
+
+.about-us {
+    padding: 100px 200px 200px 600px;
+    text-align:left;
+}
+
+.order, .book, .customers {
+ text-align: center;
+}
+
+.customers img {
+    border-radius: 300px;
+    height: 90px;
+}
+
+.week {
+    float: left;
+    width: 50%;
+    height: 50px;
+}
+
+.weekend {
+    float: right;
+    width: 50%;
+    height: 50px;
+}
+
+.book img {
+    width: 70%;
+    height: 500px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width:900px) {
+ section, main, .about-us, .week, .weekend {
+    float: none;
+    display: block;
+    padding: 0;
+    width: 100%;
+ }
+
+ .order, .book, .customers {
+    height: fit-content;
+ }
+}
